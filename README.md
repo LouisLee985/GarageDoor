@@ -1,6 +1,6 @@
 # GarageDoor
 
 <p align="center">
-<img src="/image/HomeApp_Icon_2.svg" width="10%"/>
+<img src="/PIC/无标题.jpg" width="80%"/>
 </p>
  
