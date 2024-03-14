@@ -15,6 +15,10 @@
 <br><br>
 
 ---
+<p align="center">
+<img src="/PIC/interface2.png" width="80%"/>
+</p>
+<br>
 <div align = "center">
  
 |A|B|C|D|E|
