@@ -13,7 +13,11 @@
  <a href='http://htmlpreview.github.io/?https://github.com/LouisLee985/GarageDoor/blob/main/PIC/GerBer_Door_8266.html'>InteractiveHtmlBom表</a>
 
  <br>
- |1|黑色|上行线|L1|BLACK|
+  <br>
+  
+
+
+|1|黑色|上行线|L1|BLACK| 
 |:----|:----|:----|:----|:----|
 |2|棕色|下行线|L2|BROWN|
 |3|蓝色|公共线|N|BLUE|
