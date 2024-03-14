@@ -1,0 +1,203 @@
+// 109: close sensor, 110: open sensor, 12:open/Up , 13:close/Down, 14:Lamp , 15:Emergency stop
+// IO5: Obstruction sensor
+
+{
+	"c":{"0":{"r":[{"g":12},{"g":13}]},"o":1,"l":2,"ic":[[5,4,100]],"mc":[[0,32,0,160]],"m":10,"b":[{"g":0,"t":5}]},
+	"a":[{
+		"0":{"r":[{"g":12},{"g":13,"v":1,"i":25}]},
+		"1":{"r":[{"g":13},{"g":12,"v":1,"i":25}]},
+		"2":{"a":0},
+		"3":{"a":1},
+		"4":{"r":[{"g":14,"v":1}]},
+		"5":{"r":[{"g":14,"v":1,"i":10},{"g":15}]},
+		"6":{"a":4},
+		"7":{"r":[{"g":14,"v":1},{"g":15,"v":1}]},
+		"8":{"r":[{"g":12,"v":1,"i":2.5},{"g":13,"i":5}]},
+		"9":{"a":10},
+		"10":{"r":[{"g":12},{"g":13}]},
+		"12":{"a":0},
+		"13":{"a":1},
+		"t":40,"s":1,"d":25,"c":25,
+		"f0":[{"g":107,"p":0,"t":0}],
+		"f1":[{"g":104,"p":0,"t":1}],
+		"f6":[{"g":108,"p":0,"t":0}],
+		"f7":[{"g":108,"p":0,"t":1}],
+		"f8":[{"g":106,"p":1,"t":1}]
+		}
+	]
+}
+
+"vs":1,"s":1,"e":10,
+,
+		{
+		"0":{"m":[[1,3],[1,-10001]]},
+		"1":{"m":[[1,-10000],[1,4]]}
+		}
+
+		"4":{"r":[{"g":14,"v":1}]},
+		"5":{"r":[{"g":14,"v":1,"i":10}]},
+		"6":{"a":4},
+		"7":{"r":[{"g":14,"v":1},{"g":15,"v":1,"i":10}]},
+
+
+{"c":{"0":{"r":[{"g":12},{"g":13}]},"o":1,"l":2,"m":10,"b":[{"g":0,"t":5}]},"a":[{"0":{"r":[{"g":12},{"g":13,"v":1}]},"1":{"r":[{"g":13},{"g":12,"v":1}]},"2":{"r":[{"g":13,"i":1},{"g":12}]},"3":{"r":[{"g":12,"i":1},{"g":13}]},"4":{"r":[{"g":12}]},"5":{"r":[{"g":13}]},"8":{"r":[{"g":12,"v":1,"i":2},{"g":13,"i":2.5}]},"9":{"a":10},"10":{"r":[{"g":12},{"g":13}]},"12":{"a":0},"13":{"a":1},"t":40,"d":25,"c":25,"vs":1,"s":1,"e":10,"f6":[{"g":5,"v":1,"t":0}],"f7":[{"g":5,"t":1}],"f8":[{"g":14,"t":0}]}]}
+
+{"c":{"0":{"r":[{"g":12},{"g":13}]},"o":1,"l":2,"m":10,"b":[{"g":0,"t":5}]},"a":[{"0":{"r":[{"g":12},{"g":13,"v":1}]},"1":{"r":[{"g":13},{"g":12,"v":1}]},"2":{"r":[{"g":13,"i":0.5},{"g":12}]},"3":{"r":[{"g":12,"i":0.5},{"g":13}]},"4":{"r":[{"g":12}]},"5":{"r":[{"g":13}]},"10":{"r":[{"g":12},{"g":13}]},"12":{"a":0},"13":{"a":1},"t":40,"d":25,"c":25,"vs":1,"s":1,"e":10,"f6":[{"g":5,"v":1,"t":0}],"f7":[{"g":5,"t":1}],"f8":[{"g":5,"t":0,"i":1}]}]}
+
+{"c":{"0":{"r":[{"g":12},{"g":13}]},"o":1,"l":2,"m":10,"b":[{"g":0,"t":5}]},"a":[{"0":{"r":[{"g":12},{"g":13,"v":1}]},"1":{"r":[{"g":13},{"g":12,"v":1}]},"2":{"r":[{"g":13,"i":0.5},{"g":12}]},"3":{"r":[{"g":12,"i":0.5},{"g":13}]},"4":{"r":[{"g":12}]},"5":{"r":[{"g":13}]},"10":{"r":[{"g":12},{"g":13}]},"t":40,"d":25,"c":25,"vs":1,"s":1,"e":10,"f6":[{"g":5,"v":1,"t":0}],"f7":[{"g":5,"t":1}],"f8":[{"g":5,"t":0,"i":1}]}]}
+// "0"		Close an open door				Handle request to close an open door
+// "1"		Open a closed door				Handle request to open a closed door
+// "2"		Close an opening door			Handle changing direction of opening action
+// "3"		Open a closing door				Handle changing direction of closing action
+// "4"		Opened door detected			Handle door has opened
+// "5"		Closed door detected			Handle door has closed
+// "6"		Opening door detected			Handle door opening
+// "7"		Closing door detected			Handle door closing
+// "8"		Obstruction removed				Handle the removal of an obstruction
+// "9"		Obstruction detected			Handle the detection of an obstruction
+// "10"	Emergency stop					Handle an emergency stop
+// "11"	Obstruction detected by time	Handle the detection of an obstruction by Obstruction Detection Time
+// "12"	Close a stopped door			Handle request to close a middle open stopped door
+// "13"	Open a stopped door				Handle request to open a middle open stopped door
+
+// "f0"	Set garage door to open
+// "f1"	Set garage door to close
+// "f2"	Indicates that garage door is open
+// "f3"	Indicates that garage door is closed
+// "f4"	Indicates that garage door is opening
+// "f5"	Indicates that garage door is closing
+// "f6"	Indicates that there is not obstruction
+// "f7"	Indicates that there is obstruction
+// "f8"	Emergency stop
+
+// Grarage Door without any Sensors
+{
+	"c":{"l":13,"b":[{"g":0,"t":5}],"0":{"r":[{"g":12}]}},
+	"a":[{
+	"t":40,
+	"d":18,
+	"0":{"r":[{"g":12,"v":1,"i":0.5}]},
+	"1":{"a":0},
+	"2":{"r":[{"g":12,"i":1.5},{"g":12,"v":1,"i":0.5},{"g":12,"v":1,"i":2}]},
+	"3":{"a":2}
+	}]
+	}
+
+
+{
+	"c":{"l":2,"b":[{"g":0,"t":5}]},
+	"a":[
+		{
+		"t":40,"d":18,
+		"f3":[{"g":14,"t":0}],
+		"f4":[{"g":14}],
+		"0":{"r":[{"g":13,"v":1,"i":0.5}]},
+		"1":{"a":0},
+		"2":{"r":[{"g":13,"i":1.5},{"g":13,"v":1,"i":0.5},{"g":13,"v":1,"i":2}]},
+		"3":{"a":2},
+		"b":[{"g":15}]},
+		{
+		"1":{"s":[{"a":1}]}
+		}
+		]
+}
+{"c":{"l":2,"b":[{"g":0,"t":5}]},"a":[{"0":{"r":[{"g":13,"v":1,"i":0.5}]},"1":{"a":0},"2":{"r":[{"g":13,"i":1.5},{"g":13,"v":1,"i":0.5},{"g":13,"v":1,"i":2}]},"3":{"a":2},"t":40,"d":18,"f3":[{"g":14,"t":0}],"f4":[{"g":14}],"b":[{"g":15}]},{"1":{"s":[{"a":1}]}}]}
+
+
+{
+	"c":{"l":2,"b":[{"g":0,"t":5}],"o":1},
+	"a":[{
+		"0":{"r":[{"g":13,"v":1,"i":0.3}]},
+		"1":{"a":0},
+		"2":{"r":[{"g":13,"i":1.5},{"g":13,"v":1,"i":0.3},{"g":13,"v":1,"i":2}]},
+		"3":{"a":2},
+		"4":{"m":[{"g":6,"v":1},{"g":6,"v":-1}]},
+		"5":{"m":[{"g":6,"v":0}]},
+		"t":40,"d":26,
+		"f3":[{"g":14,"t":1,"p":1}],
+		"f4":[{"g":14,"p":1,"t":0}],
+		"s":1,"b":[],
+		"f2":[{"g":4,"t":1}],
+		"f5":[{"g":4,"t":0}],
+		"f7":[],
+		"f6":[]
+		},
+		{"1":{"s":[{"a":1}]},"b":[],"s":0},
+		{"1":{"s":[{"a":2}]},"b":[],"s":0},
+		{
+			"0":{"m":[{"g":5,"v":1},{"g":5,"v":-1}]},
+			"t":12,"s":0,
+			"f0":[{"g":5,"t":0}],
+			"f1":[{"g":5,"t":1}]},
+		{
+			"0":{"m":[{"g":1,"v":1}]},
+			"xa":0,"t":1,"b":[],"s":0,"d":15},
+		{
+			"0":{"m":[{"g":1,"v":1}]},
+			"xa":0,"t":1,"b":[],"s":0,"d":300},
+		{
+			"0":{"m":[{"g":1,"v":3}]},
+			"1":{"m":[{"g":1,"v":4}]},
+			"t":1,"b":[],"s":0}
+		]
+}
+
+
+// ***
+{"c":{"o":1,"l":2,"m":10,"b":[{"g":0,"t":5}]},"a":[{"0":{"r":[{"g":12,"v":0},{"g":13,"v":1,"i":18}]},"1":{"r":[{"g":13,"v":0},{"g":12,"v":1,"i":18}]},"2":{"a":0},"3":{"a":1},"4":{"r":[{"g":12,"v":0,"i":1},{"g":13,"v":0,"i":1}]},"5":{"a":4},"10":{"r":[{"g":12,"v":0,"i":1},{"g":13,"v":0,"i":1}]},"t":40,"d":18,"vs":1,"s":1,"f3":[{"g":14,"t":0}],"f4":[{"g":14}],"f2":[{"g":4,"t":0}],"f5":[{"g":4}],"f8":[{"g":5,"t":0}]}]}
+{"c":{"0":{"r":[{"g":12},{"g":13}]},"o":1,"l":2,"m":10,"b":[{"g":0,"t":5}]},"a":[{"0":{"r":[{"g":12},{"g":13,"v":1}]},"1":{"r":[{"g":13},{"g":12,"v":1}]},"2":{"r":[{"g":13,"i":0.5},{"g":12}]},"3":{"r":[{"g":12,"i":0.5},{"g":13}]},"4":{"r":[{"g":12}]},"5":{"r":[{"g":13}]},"10":{"r":[{"g":12},{"g":13}]},"t":40,"d":25,"vs":1,"s":1,"e":10,"f8":[{"g":5,"t":0}]}]}
+
+
+
+
+
+// Window Covering Example
+{
+	"c":{"l":0,"b":[{"g":2,"t":5}]},
+	"a":[{
+		"t":45,"o":18,"c":14,"f":70,
+		"0":{"r":[{"g":15},{"g":4,"v":1}]},
+		"1":{"r":[{"g":15,"v":1},{"g":4}]},
+		"2":{"r":[{"g":15},{"g":4}]},
+		"3":{"r":[{"g":15},{"g":4,"i":0.2}]},
+		"4":{"r":[{"g":15,"i":0.2},{"g":4}]},
+		"f3":[{"g":5,"i":1,"p":0,"t":0}],
+		"f4":[{"g":13,"i":1,"p":0,"t":0}]
+		}]
+	}
+
+	{
+		"c": { "l": 0, "b": [{ "g": 2, "p": 0, "t": 5 }], "0": { "r": [{ "g": 15 }, { "g": 16 }] } },
+		"a": [{
+		  "t": 45,
+		  "o": 18,
+		  "c": 14,
+		  "f": 70,
+		  "0": { "r": [{ "g": 15, "v": 1 }, { "g": 4 }] },
+		  "1": { "r": [{ "g": 15 }, { "g": 4, "v": 1 }] },
+		  "2": { "r": [{ "g": 15 }, { "g": 4 }] },
+		  "3": { "r": [{ "g": 15, "i": 0.2 }, { "g": 4 }] },
+		  "4": { "r": [{ "g": 15 }, { "g": 4, "i": 0.2 }] },
+		  "f0": [{ "g": 5, "i": 1, "p": 0, "t":0 }],
+		  "f1": [{ "g": 13, "i": 1, "p": 0, "t":0 }],
+		  "f2": [{ "g": 5 }, { "g": 13 }]
+		}]
+	  }
+
+	//   "0"	Close, from stop	Close the window covering from the stopped state
+	//   "1"	Open, from stop	Open the window covering from the stopped state
+	//   "2"	Stop	Stop the window covering opening or closing
+	//   "3"	Close, from opening	Action a close while window covering is opening
+	//   "4"	Open, from closing	Action an open while window covering is closing
+	//   "5"	Stop, from closing	Stop the window covering while it is closing
+	//   "6"	Stop, from opening	Stop the window covering while it is opening
+	//   "7"	Obstruction removed	
+	//   "8"	Obstruction detected	
+	// "f0"	Close window covering
+	// "f1"	Open window covering
+	// "f2"	Stop window covering opening or closing
+	// "f3"	Toggle between closing and stop
+	// "f4"	Toggle between opening and stop
+	// "f5"	Indicates that there is no obstruction
+	// "f6"	Indicates that there is an obstruction
+
