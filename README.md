@@ -16,7 +16,7 @@
 
 ---
 <p align="center">
-<img src="/PIC/interface2.png" width="80%"/>
+<img src="/PIC/interface2.png" width="60%"/>
 </p>
 <br>
 <div align = "center">
