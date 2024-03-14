@@ -10,13 +10,13 @@
 <br>
 <br>
 <br>
- <a href='http://htmlpreview.github.io/?https://github.com/LouisLee985/GarageDoor/blob/main/PIC/GerBer_Door_8266.html'>InteractiveHtmlBom表</a>
+<a href='http://htmlpreview.github.io/?https://github.com/LouisLee985/GarageDoor/blob/main/PIC/GerBer_Door_8266.html'>InteractiveHtmlBom表</a>
 
 <br><br>
 
 ---
 <p align="center">
-<img src="/PIC/interface2.png" width="60%"/>
+<img src="/PIC/interface.png" width="60%"/>
 </p>
 <br>
 <div align = "center">
