@@ -1,13 +1,13 @@
  
-108 Obstructionsensor 	GBP0 1	Obstructionsensor NO
-109 Closesensor 		GPB1 0	Closesensor2 NC
-110 Opensensor 			GPB2 1	Opensensor2 NO
+108 Obstructionsensor		GBP0 1	Obstructionsensor NO
+109 Closesensor			GPB1 0	Closesensor2 NC
+110 Opensensor			GPB2 1	Opensensor2 NO
 "mc":[[0,32,0,160]]
 
-104 Down close	GPA4
-105 Lock	GPA5
-106 Stop	GPA6
-107 Up	open	GPA7
+104 Down close		GPA4
+105 Lock		GPA5
+106 Stop		GPA6
+107 Up	open		GPA7
 
 12 Up open
 13 Down close
