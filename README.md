@@ -1,10 +1,10 @@
 ## PCB
 <p align="center">
-<img src="/PIC/front.jpg" width="60%"/>
+<img src="/PIC/front.png" width="60%"/>
 </p>
 <br>
 <p align="center">
-<img src="/PIC/front2.jpg" width="60%"/>
+<img src="/PIC/front2.png" width="60%"/>
 </p> 
 <br>
 <br>
