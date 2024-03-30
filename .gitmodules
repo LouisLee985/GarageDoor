@@ -1,3 +1,3 @@
 [submodule "make_bom/InteractiveHtmlBom"]
 	path = make_bom/InteractiveHtmlBom
-	url = https://github.com/openscopeproject/InteractiveHtmlBom
+	url = https://github.com/openscopeproject/InteractiveHtmlBom/tree/master/InteractiveHtmlBom
