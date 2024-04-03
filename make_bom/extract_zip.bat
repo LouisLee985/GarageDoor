@@ -1,4 +1,5 @@
 powershell -Command "Expand-Archive -Path 'python.zip' -DestinationPath 'InteractiveHtmlBom' -Force"
+robocopy  .\config.ini .\InteractiveHtmlBom
 del python.zip
 del extract_zip.bat
 
