@@ -1,1 +1,1 @@
-phython.zip is from https://github.com/yanranxiaoxi/InteractiveHtmlBom
+python.zip is from https://github.com/yanranxiaoxi/InteractiveHtmlBom
