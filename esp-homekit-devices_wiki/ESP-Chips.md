@@ -1,0 +1,11 @@
+|   Chip   |          CPU         |  Speed  | Cores |  RAM  | Pins | GPIOs |     WiFi      |
+|:--------:|:---------------------|:-------:|:-----:|:-----:|:----:|:-----:|:-------------:|
+| [ESP8266](https://www.espressif.com/sites/default/files/documentation/esp8266-technical_reference_en.pdf)  | Tensilica L106       |   80MHz |   1   | 160KB |  32  |   13  | 802.11n 20MHz |
+| [ESP32](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/hw-reference/index.html)    | Tensilica Xtensa LX6 |  160MHz | 1 / 2 | 520KB |  48  | [30](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-reference/peripherals/gpio.html) | 802.11n 40MHz |
+| [ESP32-S2](https://docs.espressif.com/projects/esp-idf/en/stable/esp32s2/hw-reference/index.html) | Tensilica Xtensa LX7 |  160MHz |   1   | 320KB |  56  | [39](https://docs.espressif.com/projects/esp-idf/en/stable/esp32s2/api-reference/peripherals/gpio.html) | 802.11n 40MHz |
+| [ESP32-S3](https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/hw-reference/index.html) | Tensilica Xtensa LX7 |  160MHz |   2   | 512KB |  56  | [41](https://docs.espressif.com/projects/esp-idf/en/stable/esp32s3/api-reference/peripherals/gpio.html) | 802.11n 40MHz |
+| [ESP32-C2](https://docs.espressif.com/projects/esp-idf/en/stable/esp32c2/hw-reference/index.html) | RISC-V               |  120MHz |   1   | 272KB |  24  | [17](https://docs.espressif.com/projects/esp-idf/en/stable/esp32c2/api-reference/peripherals/gpio.html) | 802.11n 40MHz |
+| [ESP32-C3](https://docs.espressif.com/projects/esp-idf/en/stable/esp32c3/hw-reference/index.html) | RISC-V               |  160MHz |   1   | 400KB |  32  | [18](https://docs.espressif.com/projects/esp-idf/en/stable/esp32c3/api-reference/peripherals/gpio.html) | 802.11n 40MHz |
+| [ESP32-C6](https://docs.espressif.com/projects/esp-idf/en/stable/esp32c6/hw-reference/index.html) | RISC-V               |  160MHz |   1   | 512KB | 32 / 40 | [18 / 26](https://docs.espressif.com/projects/esp-idf/en/stable/esp32c6/api-reference/peripherals/gpio.html) | 802.11ax 40MHz |
+
+[Official Espressif Technical Documents](https://www.espressif.com/en/support/documents/technical-documents)
