@@ -87,9 +87,6 @@ Closes either after 5 min when inching switch goes off, or 15 sec (another inchi
 |OPENIO|19
 |STOPIO|22
 |CLOSEIO|21
-
-| IO | Pin |
-|:------|:-----|
 |OBSTRUCTIONSENSORIO|25
 |OPENSENSORIO|26
 |CLOSESENSORIO|27/18
