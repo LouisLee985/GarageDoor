@@ -1,39 +1,68 @@
 
-`{"c":{"io":[[[2,13],2],[[0],6],[[15],6,1]],"l":2,"b":[[0,5]]},"a":[{"0":{"r":[[13]]},"1":{"r":[[13,1]]},"b":[[0],[15],[15,0]]}]}`	非点触
+非点触
+```json
+{"c":{"io":[[[2,13],2],[[0],6],[[15],6,1]],"l":2,"b":[[0,5]]},"a":[{"0":{"r":[[13]]},"1":{"r":[[13,1]]},"b":[[0],[15],[15,0]]}]}
+```	
 
-`{"c":{"io":[[[2,13],2],[[15],6,1]],"l":2},"a":[{"0":{"r":[[13]]},"1":{"r":[[13,1]]},"b":[[15],[15,0]]}]}`	非点触
+```json
+{"c":{"io":[[[2,13],2],[[15],6,1]],"l":2},"a":[{"0":{"r":[[13]]},"1":{"r":[[13,1]]},"b":[[15],[15,0]]}]}
+```
+点触
+```json
+{"c":{"io":[[[2,13],2],[[15],6,1]],"l":2},"a":[{"0":{"r":[[13]]},"1":{"r":[[13,1]]},"b":[[15]]}]}
+```	
 
-`{"c":{"io":[[[2,13],2],[[15],6,1]],"l":2},"a":[{"0":{"r":[[13]]},"1":{"r":[[13,1]]},"b":[[15]]}]}`	点触
 
+"0"	Close an open door				&emsp;Handle request to close an open door
 
-"0"	Close an open door				Handle request to close an open door
 "1"	Open a closed door				Handle request to open a closed door
+
 "2"	Close an opening door				Handle changing direction of opening action
+
 "3"	Open a closing door				Handle changing direction of closing action
+
 "4"	Opened door detected				Handle door has opened
+
 "5"	Closed door detected				Handle door has closed
+
 "6"	Opening door detected				Handle door opening
+
 "7"	Closing door detected				Handle door closing
+
 "8"	Obstruction removed				Handle the removal of an obstruction
+
 "9"	Obstruction detected				Handle the detection of an obstruction
+
 "10"	Emergency stop					Handle an emergency stop
+
 "11"	Obstruction detected by time			Handle the detection of an obstruction by Obstruction Detection Time
+
 "12"	Close a stopped door				Handle request to close a middle open stopped door
+
 "13"	Open a stopped door				Handle request to open a middle open stopped door
 
+
 "f0"	Set garage door to open
+
 "f1"	Set garage door to close
+
 "f2"	Indicates that garage door is open
+
 "f3"	Indicates that garage door is closed
+
 "f4"	Indicates that garage door is opening
+
 "f5"	Indicates that garage door is closing
+
 "f6"	Indicates that there is not obstruction
+
 "f7"	Indicates that there is obstruction
+
 "f8"	Emergency stop
 
 Closes either after 5 min when inching switch goes off, or 15 sec (another inching switch) after gate’s photoelectronic motion sensor triggered.
 
-```
+```json
 {
   "c":{"l":13,"b":[{"g":0,"t":5}],"o":0},
 	"a":[
@@ -75,7 +104,7 @@ OBSTRUCTIONSENSORIO 25
 OPENSENSORIO 26
 CLOSESENSORIO 27/18
 
-```
+```json
 {"c":{"io":[[[2,12,13,14,15],2],[[19,22,21,25,26,18],6,1,1],[[0],6],[[33]]],
 	"o":1,"l":2,"m":10,"b":[[0,5]]},
 	"a":[{
@@ -106,6 +135,6 @@ CLOSESENSORIO 27/18
 }
 ```
 
-```
+```json
 {"c":{"io":[[[2,12,13,14,15],2],[[19,22,21,25,26,18],6,1,1],[[0],6],[[33]]],"o":1,"l":2,"m":10,"b":[[0,5]]},"a":[{"0":{"r":[[12],[13,1,25]]},"1":{"r":[[13],[12,1,25]]},"2":{"a":0},"3":{"a":1},"4":{"r":[[14,1]]},"5":{"r":[[14,1,5],[15]]},"6":{"a":4},"7":{"r":[[14,1],[15,1]]},"8":{"a":0},"9":{"r":[[12,1,2],[13]]},"10":{"r":[[12],[13]]},"12":{"a":0},"13":{"a":1},"t":40,"s":1,"d":25,"c":25,"vs":1,"f0":[[19]],"f1":[[21]],"f6":[[25,0]],"f7":[[25]],"f8":[[22]],"f3":[[18]],"f4":[[18,0]],"f2":[[26]],"f5":[[26,0]]}]}
 ```
