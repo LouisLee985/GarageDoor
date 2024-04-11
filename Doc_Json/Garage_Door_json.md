@@ -26,7 +26,7 @@
 | `"8"` | Obstruction removed | Handle the removal of an obstruction
 | `"9"` | Obstruction detected | Handle the detection of an obstruction
 | `"10"` | Emergency stop | Handle an emergency stop
-| `"11"` | Obstruction detected by time | Handle the detection of an obstruction by [Obstruction Detection Time](esp-homekit-devices-wiki-12.12.4/Garage-Door.md#Obstruction-Detection-Time)
+| `"11"` | Obstruction detected by time | Handle the detection of an obstruction by [Obstruction Detection Time](https://github.com/LouisLee985/GarageDoor/blob/main/esp-homekit-devices-wiki-12.12.4/Garage-Door.md#Obstruction-Detection-Time)
 | `"12"` | Close a stopped door | Handle request to close a middle open stopped door
 | `"13"` | Open a stopped door | Handle request to open a middle open stopped door
 
