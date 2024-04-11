@@ -13,52 +13,36 @@
 ```	
 
 
-"0"	Close an open door				&emsp;Handle request to close an open door
-
-"1"	Open a closed door				Handle request to open a closed door
-
-"2"	Close an opening door				Handle changing direction of opening action
-
-"3"	Open a closing door				Handle changing direction of closing action
-
-"4"	Opened door detected				Handle door has opened
-
-"5"	Closed door detected				Handle door has closed
-
-"6"	Opening door detected				Handle door opening
-
-"7"	Closing door detected				Handle door closing
-
-"8"	Obstruction removed				Handle the removal of an obstruction
-
-"9"	Obstruction detected				Handle the detection of an obstruction
-
-"10"	Emergency stop					Handle an emergency stop
-
-"11"	Obstruction detected by time			Handle the detection of an obstruction by Obstruction Detection Time
-
-"12"	Close a stopped door				Handle request to close a middle open stopped door
-
-"13"	Open a stopped door				Handle request to open a middle open stopped door
+| Key | Action | Description |
+|:------:|:------|:------------|
+| `"0"` | Close an open door | Handle request to close an open door
+| `"1"` | Open a closed door | Handle request to open a closed door
+| `"2"` | Close an opening door | Handle changing direction of opening action
+| `"3"` | Open a closing door | Handle changing direction of closing action
+| `"4"` | Opened door detected | Handle door has opened
+| `"5"` | Closed door detected | Handle door has closed
+| `"6"` | Opening door detected | Handle door opening
+| `"7"` | Closing door detected | Handle door closing
+| `"8"` | Obstruction removed | Handle the removal of an obstruction
+| `"9"` | Obstruction detected | Handle the detection of an obstruction
+| `"10"` | Emergency stop | Handle an emergency stop
+| `"11"` | Obstruction detected by time | Handle the detection of an obstruction by [Obstruction Detection Time](#Obstruction-Detection-Time)
+| `"12"` | Close a stopped door | Handle request to close a middle open stopped door
+| `"13"` | Open a stopped door | Handle request to open a middle open stopped door
 
 
-"f0"	Set garage door to open
 
-"f1"	Set garage door to close
-
-"f2"	Indicates that garage door is open
-
-"f3"	Indicates that garage door is closed
-
-"f4"	Indicates that garage door is opening
-
-"f5"	Indicates that garage door is closing
-
-"f6"	Indicates that there is not obstruction
-
-"f7"	Indicates that there is obstruction
-
-"f8"	Emergency stop
+| Key | Required State |
+|:------:|:-----|
+| `"f0"` | Set garage door to open
+| `"f1"` | Set garage door to close
+| `"f2"` | Indicates that garage door is open
+| `"f3"` | Indicates that garage door is closed
+| `"f4"` | Indicates that garage door is opening
+| `"f5"` | Indicates that garage door is closing
+| `"f6"` | Indicates that there is not obstruction
+| `"f7"` | Indicates that there is obstruction
+| `"f8"` | Emergency stop
 
 Closes either after 5 min when inching switch goes off, or 15 sec (another inching switch) after gate’s photoelectronic motion sensor triggered.
 
@@ -90,19 +74,25 @@ Closes either after 5 min when inching switch goes off, or 15 sec (another inchi
 } 
 ```
 
-LEDIO 2
-OPENRELAYIO 12
-CLOSERELAYIO 13
-LAMPRELAYIO 14
-OBSTRUCTIONSENSOR_SWIO 15
+| IO | Pin |
+|:------|:-----|
+|LEDIO|2
+|OPENRELAYIO|12
+|CLOSERELAYIO|13
+|LAMPRELAYIO|14
+|OBSTRUCTIONSENSOR_SWIO|15
 
-OPENIO 19
-STOPIO 22
-CLOSEIO 21
+| IO | Pin |
+|:------|:-----|
+|OPENIO|19
+|STOPIO|22
+|CLOSEIO|21
 
-OBSTRUCTIONSENSORIO 25
-OPENSENSORIO 26
-CLOSESENSORIO 27/18
+| IO | Pin |
+|:------|:-----|
+|OBSTRUCTIONSENSORIO|25
+|OPENSENSORIO|26
+|CLOSESENSORIO|27/18
 
 ```json
 {"c":{"io":[[[2,12,13,14,15],2],[[19,22,21,25,26,18],6,1,1],[[0],6],[[33]]],
